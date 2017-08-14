@@ -1,2 +1,3 @@
-# myPractices
-Only for my coding practices. Not useful for public. 
+### EulerProject Problems' Solutions
+
+Solutions of some of the problems in EulerProject. 

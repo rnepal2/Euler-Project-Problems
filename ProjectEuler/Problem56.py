@@ -6,14 +6,14 @@ import time
 
 start_time = time.time()
 
-def Power_Numbers(a, b):
+def power_numbers(a, b):
 	list_numbers = []
 	for i in range(1, a):
 		for j in range(1, b):
 			list_numbers.append(i**j)
 	return list_numbers
 
-def Sum_Of_Digits(a_num):
+def sum_of_digits(a_num):
 	string_n = str(a_num)
 	
 	list_of_digits = []
@@ -26,19 +26,18 @@ def Sum_Of_Digits(a_num):
 		sum += k
 	return sum
 	
-def Greatest_Sumof_Digits(a_list):
+def greatest_sumof_digits(a_list):
 	list_of_sum = []
 	for i in a_list:
-		sum = Sum_Of_Digits(i)
+		sum = sum_of_digits(i)
 		list_of_sum.append(sum)
 	
 	max_sum = max(list_of_sum)
 	return max_sum
 		
 
-	
-list_all = Power_Numbers(100, 100)
-ans = Greatest_Sumof_Digits(list_all)
+list_all = power_numbers(100, 100)
+ans = greatest_sumof_digits(list_all)
 print("The maximum digital sum is: ", ans)
 
 print("The time taken is: ", time.time()- start_time)

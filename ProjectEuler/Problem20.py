@@ -6,13 +6,13 @@ import time
 
 start_time = time.time()
 
-def Factorial(n):
+def factorial(n):
 	if n <= 1: return 1
 	else: 
-		return n*Factorial(n-1)
+		return n*factorial(n-1)
 
-def Sum_Of_Digits(n):
-	fact_of_n = Factorial(n)
+def sum_of_digits(n):
+	fact_of_n = factorial(n)
 	string_n = str(fact_of_n)
 	
 	list_of_digits = []
@@ -31,7 +31,7 @@ def Sum_Of_Digits(n):
 	return sum
 	
 n = int(input("Enter a number: "))
-ans = Sum_Of_Digits(n)
+ans = sum_of_digits(n)
 print("The factorial of the number is: ", ans)
 		
 print("The time taken is: ", time.time()- start_time)
